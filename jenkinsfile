@@ -5,8 +5,10 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'apt-get update'
-		sh 'cd /tmp; vi test_jen2'
+             	sh 'cd /tmp; vi test_jen2'
+		sh ' echo "abc" > test_jen2'
+		sh 'cat test_jen2'
+		
             }
         }
     }
