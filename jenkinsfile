@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-             	sh 'cd /tmp; vi test_jen2'
+             	sh 'cd /tmp; touch test_jen2'
 		sh ' echo "abc" > test_jen2'
 		sh 'cat test_jen2'
 		
